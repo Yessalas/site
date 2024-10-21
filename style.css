@@ -1,1 +1,59 @@
 @charset "UTF-8";
+
+/*** Breakponit ***/
+/*Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 375px) {
+    body{
+        background-color: #f6b5c2;
+    }
+    
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 576px) {
+    body{
+        background-color: #f6b5c2;
+    }
+    
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*Tablet Portrait>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 768px) {
+    body{
+        background-color: #f6b5c2;
+    }
+    
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*Tablet Landscape>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 993px) {
+    body{
+        background-color: #f6b5c2;
+    }
+    
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*Pcs/ Notebooks>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 1230px) {
+    body{
+        background-color: #f6b5c2;
+        color:#ffff00;
+    }
+    
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*Telas FullHD/4k/SmartTV>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 1420px) {
+    body{
+        background-color: #f6b5c2;
+        color:#7bff00;
+    }
+    
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
