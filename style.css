@@ -2,6 +2,11 @@
 /*Importação de fonte(Google Fontes)*/
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/*Variaveis*/
+:root{
+    --azul:  #05152b;
+    --branco: #fff;
+}
 /*CSS Reset (Compatibilizar em todos os navegadores) */
 *{
     margin: 0;
@@ -14,16 +19,55 @@ body{
     font-size: 1em; /*1em = 100%(Tamanho padrão)*/
 }
 /*Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>*/
-/*@media (min-width: 375px) {}*/
+
 /*Cabeçalho*/
 header{
     height: 80px;
-    background-color: #ffaeaa;
+    background-color: #ffaeaae8;
 }
 #logo img{
     width: 80px;
     height: 80px;
     margin: 6px 0px 0px 10px;
+}
+#check{
+    display: none;
+}
+/*efeito de deslizar o menu.*/
+/*se check estiver "ticado", criar um estlio para ul*/
+#check:checked~ul{
+    right: 0px;
+
+
+
+
+}
+label{
+    font-size: 2em;
+    top: 30px;
+    right: 15px;
+    position: fixed;
+    color: #fff;
+}
+nav ul{
+    height: 100vh; /*100vh =  100% altura da tela*/
+    background-color: #ffaeaa94;
+    list-style: none; /*remove bullets*/
+    width: 65%;
+    position: fixed;
+    top: 80.1px;
+    right: -65%;
+    transition: all 0.5s;
+
+}
+nav ul li{
+    padding: 15px 20px ;
+    border-bottom: 1px solid var(--branco);
+    text-align: right;
+}
+nav ul li a{
+    color: #be8b88;
+    text-decoration: none;
 }
 .container {
     margin: 0 auto; /*centralizar o bloco*/
