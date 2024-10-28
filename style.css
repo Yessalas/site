@@ -37,10 +37,6 @@ header{
 /*se check estiver "ticado", criar um estlio para ul*/
 #check:checked~ul{
     right: 0px;
-
-
-
-
 }
 label{
     font-size: 2em;
