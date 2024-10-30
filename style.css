@@ -18,6 +18,17 @@ body{
     font-family: "Open Sans", sans-serif;
     font-size: 1em; /*1em = 100%(Tamanho padrão)*/
 }
+.botao{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.3em;
+    background-color: #ffaeaae8;
+    width: 200px;
+    padding: 5px 0px;
+    border-radius: 25px;
+    align-self: center;
+    margin-top: 15px;
+}
 /*Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>*/
 
 /*Cabeçalho*/
@@ -26,8 +37,8 @@ header{
     background-color: #ffaeaae8;
 }
 #logo img{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 65px;
     margin: 6px 0px 0px 10px;
 }
 #check{
@@ -68,11 +79,32 @@ nav ul li a{
 .container {
     margin: 0 auto; /*centralizar o bloco*/
 }
-
+/*Banner*/
+main{
+    height: 60vh;
+    background: url(img/fundo2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main h1, h2{
+    color: var(--branco);
+    text-shadow: #000 0.05em 0.05em 0.05em;
+}
+main h1{
+    font-size: 3em;
+}
+main h2{
+    font-size: 1.5em;
+    margin-top: 10px;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
     /*Cabeçalho*/
     #logo img{
         margin: 6px 0px 0px 10px ;
@@ -81,6 +113,7 @@ nav ul li a{
         max-width: 540px;
         margin: 0 auto;
     }
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Tablet Portrait>>>>>>>>>>>>>>>>>>>>>>*/
@@ -88,7 +121,7 @@ nav ul li a{
     /**Cabeçalho*/
     .container{
         max-width: 720px;
-        background-color: beige;
+        background-color: #ffaeaae8;
     }
     header{
         height: 120px;
@@ -97,6 +130,11 @@ nav ul li a{
     #logo img{
         width: 115px;
         height: 110px;
+    }
+    nav ul{
+        top: 120px;
+        width:  50%;
+        right: -50%;
     }
 }
 
@@ -107,7 +145,7 @@ nav ul li a{
     /*Cabeçalho*/
     .container{
         max-width: 960px;
-        background-color: #f7c9dc;
+        background-color: #ffaeaae8;
     }
 }
 
@@ -117,31 +155,57 @@ nav ul li a{
 @media (min-width: 1230px) {
     .container{
         max-width: 1140px;
-        background-color: #ffaeaa;
+        background-color: #ffaeaae8;
     }
     header{
         height: 150px;
     }
     #logo img{
-        width: 128px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
-}
+    /*Transformação do menu*/
+    label{
+        display: none;
+    }
+    nav ul{
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: transparent;
+    }
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+    nav ul li a {
+        color: #be8b88;
+    }
+    nav ul li a:hover {
+        color: var(--branco);
+    }
+    .container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+} 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Telas FullHD/4k/SmartTV>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 1420px) {
+@media( min-width: 1420px) {
     .container{
         max-width: 1360px;
-        background-color: #f7c9dc;
+        background-color: #ffaeaae8;
     }
     header{
         height: 150px;
     }
     #logo img{
-        width: 176px;
-        height: 176px;
+        width: 100px;
+        height: 100px;
     }
 }
 
