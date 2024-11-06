@@ -6,7 +6,10 @@
 :root{
     --azul:  #05152b;
     --branco: #fff;
-    --vegi: antiquewhite;
+    --beigi: antiquewhite;
+    --rosac:#ffb5b2;
+    --rosae:#ff8c9d;
+    --rosinha:#f2bfbb;
 }
 /*CSS Reset (Compatibilizar em todos os navegadores) */
 *{
@@ -28,15 +31,15 @@ body{
 }
 .botao{
     text-decoration: none;
-    color: antiquewhite;
+    color: var(--beigi);
     font-size: 1.3em;
-    background-color: #ffaeaae8;
+    background-color: var(--rosae);
     width: 200px;
     padding: 5px 0px;
     border-radius: 25px;
     align-self: center;
     margin-top: 15px;
-    border:2px solid var(--vegi);
+    border:2px solid var(--beigi);
 }
 /*Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>*/
 
