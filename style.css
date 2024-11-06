@@ -6,6 +6,7 @@
 :root{
     --azul:  #05152b;
     --branco: #fff;
+    --vegi: antiquewhite;
 }
 /*CSS Reset (Compatibilizar em todos os navegadores) */
 *{
@@ -28,6 +29,7 @@ body{
     border-radius: 25px;
     align-self: center;
     margin-top: 15px;
+    border:2px solid var(--vegi);
 }
 /*Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>*/
 
