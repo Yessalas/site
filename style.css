@@ -39,7 +39,7 @@ header{
 #logo img{
     width: 70px;
     height: 65px;
-    margin: 6px 0px 0px 10px;
+    margin: 7px 0px 0px 10px;
 }
 #check{
     display: none;
@@ -73,7 +73,7 @@ nav ul li{
     text-align: right;
 }
 nav ul li a{
-    color: #be8b88;
+    color:antiquewhite;
     text-decoration: none;
 }
 .container {
@@ -136,7 +136,15 @@ main h2{
         width:  50%;
         right: -50%;
     }
+
+    main h1{
+        font-size: 4em ;
+    }
+    main h2{
+        font-size: 1.7em ;
+    }
 }
+
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -146,6 +154,12 @@ main h2{
     .container{
         max-width: 100%;
         background-color: #ffaeaae8;
+    }
+    main h1{
+        font-size: 4em ;
+    }
+    main h2{
+        font-size: 1.7em ;
     }
 }
 
@@ -183,7 +197,7 @@ main h2{
         border: 0;
     }
     nav ul li a {
-        color: #be8b88;
+        color: antiquewhite;
     }
     nav ul li a:hover {
         color: var(--branco);
@@ -202,7 +216,7 @@ main h2{
         background-color: #ffaeaae8;
     }
     header{
-        height: 100px;
+        height: 120px;
     }
     #logo img{
         width: 80px;
