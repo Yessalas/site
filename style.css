@@ -21,6 +21,7 @@
 body{
     font-family: "Open Sans", sans-serif;
     font-size: 1em; /*1em = 100%(Tamanho padrão)*/
+    background-color: var(--rosac);
 }
 /*Ajuste de tamanho dos lados*/
 .container{
@@ -46,7 +47,7 @@ body{
 /*Cabeçalho*/
 header{
     height: 80px;
-    background-color: #ffaeab;
+    /*background-color: #ffaeab;*/
 }
 #logo img{
     width: 70px;
@@ -111,6 +112,67 @@ main h2{
     font-size: 1.5em;
     margin-top: 10px;
 }
+/* >>>>>>>>>>> Destaque >>>>>>>>>> */
+#destaque {
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    /* Padding é o espaçamento interno para não
+    encostar na porta do dispositivo */
+}
+
+/* Atenção!!! Organizando o container após o destaque
+o estilo é aplicado apenas ao container da seção de destaque */
+
+#destaque .container{
+    flex-direction: column;
+    align-items: center;
+
+}
+#imagemDestaque img {
+    width: 200px;
+    height: 200px;
+/* arrendondar uma imagem quadrada*/
+border-radius: 50%;
+}
+
+
+#textoDestaque {
+    color: var(--branco);
+}
+#textoDestaque h2 {
+    margin-bottom: 20px;
+
+}
+
+#textoDestaque>p {
+color: var(--branco);
+margin-bottom: 15px;
+}
+
+.topicos {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.topicos img {
+    margin-right: 10px;
+}
+
+.topico p {
+    font-weight: 600;
+
+}
+/* para sumir a imagem
+#imagemDestaque {
+    display: none;
+}
+*/
+#destaque .container {
+    flex-direction: column;
+    align-items: center;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>*/
@@ -123,6 +185,29 @@ main h2{
         max-width: 540px;
         /*margin: 0 auto;*/
     }
+    nav ul {
+        right: -25%;
+        width: 25%;
+    }
+
+    /****** Banner ******/
+    main {
+        height: 100vh;
+    }
+
+    main h1 {
+        font-size: 3em;
+    }
+    #destaque .container {
+        flex-direction: row;
+    }
+    #imagemDestaque {
+        margin-right: 50px;
+    }
+    #imagemDestaque img {
+        width: 256px;
+        height: 256px;
+    }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -131,7 +216,7 @@ main h2{
     /**Cabeçalho*/
     .container{
         max-width: 720px;
-        background-color: #ffaeaae8;
+        /*background-color: #ffaeaae8;*/
     }
     header{
         height: 120px;
@@ -146,6 +231,9 @@ main h2{
         width:  50%;
         right: -50%;
     }
+    main{
+        height: 67vh;
+    }
 
     main h1{
         font-size: 4em ;
@@ -153,17 +241,38 @@ main h2{
     main h2{
         font-size: 1.7em ;
     }
+    #imagemDestaque img {
+        width: 310px;
+        height: 310px;
+    }
+    #textoDestaque h2 {
+        margin-bottom: 20px;
+        font-size: 2em ;
+    
+    }
+    
+    #textoDestaque>p {
+    color: var(--branco);
+    margin-bottom: 15px;
+    font-size: 1.4em ;
+    }
+
+    .topicos{
+    font-size: 1.3em ;
+        
+    
+    }
 }
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Tablet Landscape>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     /*Cabeçalho*/
     .container{
         max-width: 960px;
-        background-color: #ffaeaae8;
+        /*background-color: #ffaeaae8;*/
     }
     main h1{
         font-size: 4em ;
@@ -179,7 +288,7 @@ main h2{
 @media (min-width: 1230px) {
     .container{
         max-width: 1140px;
-        background-color: #ffaeaae8;
+        /*background-color: #ffaeaae8;*/
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -215,6 +324,9 @@ main h2{
    main h1{
         font-size: 6em ;
     }
+    #destaque {
+        background-attachment: fixed;
+    }
 } 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -223,17 +335,41 @@ main h2{
 @media( min-width: 1420px) {
     .container{
         max-width: 1360px;
-        background-color: #ffaeaae8;
+       /* background-color: #ffaeaae8;*/
     }
     header{
-        height: 120px;
+        height: 101px;
     }
     #logo img{
         width: 80px;
         height: 80px;
     }
     main h1{
-        font-size: 6em ;
+        font-size: 4em ;
+    }
+    main h2{
+        font-size: 1.8em ;
+    }
+    #imagemDestaque img {
+        width: 300px;
+        height: 290px;
+    /* arrendondar uma imagem quadrada*/
+    border-radius: 50%;
+    }
+    #textoDestaque h2 {
+        margin-bottom: 20px;
+        font-size: 2em ;
+    
+    }
+    
+    #textoDestaque>p {
+    color: var(--branco);
+    margin-bottom: 15px;
+    font-size: 1.1em ;
+    }
+    
+    .topicos{
+    font-size: 1.0em ;
     }
 }
 
