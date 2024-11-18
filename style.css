@@ -8,7 +8,7 @@
     --branco: #fff;
     --beigi: antiquewhite;
     --rosac:#ffb5b2;
-    --rosae:#ff8c9d;
+    --rosae:#ffa4b2;
     --rosinha:#f2bfbb;
 }
 /*CSS Reset (Compatibilizar em todos os navegadores) */
@@ -117,6 +117,7 @@ main h2{
     background-size: cover;
     background-position: center;
     padding: 50px 15px;
+    background-color: var(--rosae);
     /* Padding é o espaçamento interno para não
     encostar na porta do dispositivo */
 }
@@ -173,6 +174,33 @@ margin-bottom: 15px;
     flex-direction: column;
     align-items: center;
 }
+/****** Sobre ******/
+/* O estilo abaixo será aplicado apenas ao container que está subordinado a section "sobre" */
+#sobre .container {
+    flex-direction: column;
+}
+
+#sobre {
+    padding: 20px 15px;
+    background-color: var(--rosae);
+}
+
+#sobre h2, p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+#sobre p {
+    font-size: 1.1em;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>*/
@@ -207,6 +235,11 @@ margin-bottom: 15px;
     #imagemDestaque img {
         width: 256px;
         height: 256px;
+    }
+    /****** Sobre ******/
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -262,11 +295,17 @@ margin-bottom: 15px;
     #textoDestaque>p {
     color: var(--branco);
     margin-bottom: 15px;
-    font-size: 1.4em ;
+    font-size: 1.5em ;
     }
 
     .topicos{
-    font-size: 1.3em ;  
+    font-size: 1.4em ;  
+    }
+    #sobre h2 {
+        font-size: 2em;
+    }
+    #sobre p {
+        font-size: 1.5em;
     }
 
 }  
@@ -323,6 +362,7 @@ margin-bottom: 15px;
     }
     nav ul li a {
         color: antiquewhite;
+        font-size: 1.2em;
     }
     nav ul li a:hover {
         color: var(--branco);
@@ -332,6 +372,28 @@ margin-bottom: 15px;
     }
     #destaque {
         background-attachment: fixed;
+    }
+    /******* Sobre ******/
+    #sobre .container {
+        flex-direction: row;
+        align-items: center;
+    }
+    #sobre h2 {
+        margin-bottom: 20px;
+    }
+    #sobre p {
+        font-size: 1.1em;
+    }
+
+    #video iframe {
+        margin: 0;
+        width: 450px;
+        height: 250px;
+        
+        
+    }
+    #sobre .institucional{
+
     }
 } 
 
@@ -349,6 +411,9 @@ margin-bottom: 15px;
     #logo img{
         width: 80px;
         height: 80px;
+    }
+    nav ul li a {
+        font-size: 1.2em;
     }
     main h1{
         font-size: 4em ;
@@ -381,6 +446,7 @@ margin-bottom: 15px;
     .topicos{
     font-size: 1.0em ;
     }
+    
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
