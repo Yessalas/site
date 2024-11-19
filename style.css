@@ -7,8 +7,8 @@
     --azul:  #05152b;
     --branco: #fff;
     --beigi: antiquewhite;
-    --rosac:#ffb5b2;
-    --rosae:#ffa4b2;
+    --rosac:#f8b4b1;
+    --rosae:#ff8c9d;
     --rosinha:#f2bfbb;
 }
 /*CSS Reset (Compatibilizar em todos os navegadores) */
@@ -117,7 +117,7 @@ main h2{
     background-size: cover;
     background-position: center;
     padding: 50px 15px;
-    background-color: var(--rosae);
+    background: url(img/FUNDO.png);
     /* Padding é o espaçamento interno para não
     encostar na porta do dispositivo */
 }
@@ -131,8 +131,8 @@ o estilo é aplicado apenas ao container da seção de destaque */
 
 }
 #imagemDestaque img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 208px;
 /* arrendondar uma imagem quadrada*/
 border-radius: 50%;
 }
@@ -182,7 +182,7 @@ margin-bottom: 15px;
 
 #sobre {
     padding: 20px 15px;
-    background-color: var(--rosae);
+    background-color: #f6aaa7;
 }
 
 #sobre h2, p {
@@ -234,12 +234,12 @@ margin-bottom: 15px;
     }
     #imagemDestaque img {
         width: 256px;
-        height: 256px;
+        height: 220px;
     }
     /****** Sobre ******/
     #video iframe {
-        width: 560px;
-        height: 315px;
+        width: 440px;
+        height: 310px;
     }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
