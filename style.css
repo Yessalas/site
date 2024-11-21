@@ -150,6 +150,7 @@ border-radius: 50%;
 #textoDestaque>p {
 color: var(--branco);
 margin-bottom: 15px;
+font-size: 1.1em;
 }
 
 .topicos {
@@ -164,6 +165,7 @@ margin-bottom: 15px;
 
 .topico p {
     font-weight: 600;
+    font-size: 1.1em;
 
 }
 /* para sumir a imagem
@@ -383,7 +385,7 @@ margin-bottom: 15px;
         margin-bottom: 20px;
     }
     #sobre p {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
 
     #video iframe {
