@@ -118,6 +118,7 @@ main h2{
     background-position: center;
     padding: 50px 15px;
     background: url(img/FUNDO.png);
+    background-attachment: fixed;
     /* Padding é o espaçamento interno para não
     encostar na porta do dispositivo */
 }
@@ -131,8 +132,8 @@ o estilo é aplicado apenas ao container da seção de destaque */
 
 }
 #imagemDestaque img {
-    width: 220px;
-    height: 208px;
+    width: 200px;
+    height: 175px;
 /* arrendondar uma imagem quadrada*/
 border-radius: 50%;
 }
@@ -197,7 +198,7 @@ margin-bottom: 15px;
 }
 
 #video iframe {
-    width: 340px;
+    width: 277px;
     height: 191px;
     margin-top: 20px;
 }
@@ -283,8 +284,8 @@ margin-bottom: 15px;
 
     
     #imagemDestaque img {
-        width: 310px;
-        height: 310px;
+        width: 285px;
+        height: 265px;
     }
     #textoDestaque h2 {
         margin-bottom: 20px;
@@ -426,10 +427,10 @@ margin-bottom: 15px;
         width: 175px;
     }
     #imagemDestaque img {
-        width: 300px;
-        height: 290px;
+        width: 290px;
+        height: 250px;
     /* arrendondar uma imagem quadrada*/
-    border-radius: 50%;
+        border-radius: 50%;
     }
     #textoDestaque h2 {
         margin-bottom: 20px;
@@ -438,13 +439,16 @@ margin-bottom: 15px;
     }
     
     #textoDestaque>p {
-    color: var(--branco);
-    margin-bottom: 15px;
-    font-size: 1.1em ;
+        color: var(--branco);
+        margin-bottom: 15px;
+        font-size: 1.1em ;
     }
     
     .topicos{
-    font-size: 1.0em ;
+        font-size: 1.0em ;
+    }
+    #sobre p {
+        font-size: 1.1em;
     }
     
 }
