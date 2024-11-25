@@ -383,11 +383,12 @@ font-size: 1.1em;
     #imagemDestaque img {
         width: 260px;
         height: 240px;
+    }
     #destaque {
         background-attachment: fixed;
     }
     /******* Sobre ******/
-    #sobre .container {
+    #sobre .container{
         flex-direction: row;
         align-items: center;
     }
@@ -453,8 +454,19 @@ font-size: 1.1em;
     .topicos{
         font-size: 1.0em ;
     }
+
+    #sobre .container{
+        flex-direction: row;
+        align-items: center;
+    }
+
     #sobre p {
         font-size: 1.1em;
+    }
+    #video iframe {
+        margin: 0;
+        width: 450px;
+        height: 250px;    
     }
     
 }
