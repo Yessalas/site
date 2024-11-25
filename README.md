@@ -11,3 +11,7 @@ Estudo do HTML5 e CSS3
 
 ## Autor
 Yesenia Salas Huanca
+
+## Site
+![](img/qrcode.png)
+
