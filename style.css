@@ -401,8 +401,8 @@ font-size: 1.1em;
 
     #video iframe {
         margin: 0;
-        width: 450px;
-        height: 250px;    
+        width: 560px;
+        height: 315px;    
     }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -465,8 +465,9 @@ font-size: 1.1em;
     }
     #video iframe {
         margin: 0;
-        width: 450px;
-        height: 250px;    
+        width: 560px;
+        height: 315px;    
+    
     }
     
 }
