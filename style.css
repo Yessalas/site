@@ -229,12 +229,14 @@ font-size: 1.1em;
     margin-bottom: 20px;
     text-shadow: #000 0.05em 0.05em 0.05em;
 }
-
-
 #imagemfaixa img {
     width: 300px;
     height: 250px;
+    display: none; 
 }
+
+    
+  
 #textofaixa h2{
     color: var(--branco);
     margin-bottom: 15px;
@@ -352,6 +354,7 @@ font-size: 1.1em;
     #imagemfaixa img{
         width: 370px;
         height: 360px ;
+        display: block;
     }
 
     #textofaixa h2 {
