@@ -36,7 +36,7 @@ body{
     font-size: 1.2em;
     background-color: var(--rosae);
     width: 170px;
-    padding: 5px 0px;
+    padding: 10px 20px;
     border-radius: 25px;
     align-self: center;
     margin-top: 15px;
@@ -209,6 +209,42 @@ font-size: 1.1em;
     margin-top: 20px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+#faixadestaque{
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    background: url(img/fundo.png);
+    background-attachment: fixed;
+    
+}
+#faixadestaque .container {
+    flex-direction: column;
+}
+
+#textofaixa h2, p {
+    color: var(--branco);
+}
+
+#textofaixa h2 {
+    margin-bottom: 20px;
+    text-shadow: #000 0.05em 0.05em 0.05em;
+}
+
+
+#imagemfaixa img {
+    width: 300px;
+    height: 250px;
+}
+#textofaixa h2{
+    color: var(--branco);
+    margin-bottom: 15px;
+}
+#textofaixa p{
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
@@ -252,7 +288,7 @@ font-size: 1.1em;
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Tablet Portrait>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     /**Cabeçalho*/
     .container{
         max-width: 720px;
@@ -296,7 +332,6 @@ font-size: 1.1em;
     #textoDestaque h2 {
         margin-bottom: 20px;
         font-size: 2em ;
-    
     }
     
     #textoDestaque>p {
@@ -314,7 +349,19 @@ font-size: 1.1em;
     #sobre p {
         font-size: 1.5em;
     }
+    #imagemfaixa img{
+        width: 370px;
+        height: 360px ;
+    }
 
+    #textofaixa h2 {
+        font-size: 2.1em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #textofaixa p, a {
+        font-size: 1.5em;
+    }
+    
 }  
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -404,6 +451,23 @@ font-size: 1.1em;
         width: 560px;
         height: 315px;    
     }
+    #faixadestaque .container {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #imagemfaixa img{
+        width: 370px;
+        height: 360px ;
+    }
+
+    #textofaixa h2 {
+        font-size: 2.1em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #textofaixa p, a {
+        font-size: 1.2em;
+    }
+    
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -467,7 +531,18 @@ font-size: 1.1em;
         margin: 0;
         width: 560px;
         height: 315px;    
-    
+    }
+    #imagemfaixa img{
+        width: 370px;
+        height: 360px ;
+    }
+
+    #textofaixa h2 {
+        font-size: 2em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #textofaixa p, a {
+        font-size: 1.1em;
     }
     
 }
