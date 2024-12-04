@@ -19,6 +19,9 @@
     border: 0;
 }
 /*Layout*/
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Open Sans", sans-serif;
     font-size: 1em; /*1em = 100%(Tamanho padrão)*/
@@ -75,6 +78,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 /*Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>*/
 
 /*Cabeçalho*/
@@ -292,9 +296,16 @@ font-size: 1.1em;
 #conteudo h2{
     color: var(--branco);
     margin-bottom: 25px;
+    font-size: 1.5em ;
+    text-shadow: #000 0.06em 0.06em 0.06em;
 }
-#conateudo a{
-    color: var(--azul);
+#conteudo a{
+    color: var(--branco);
+    text-decoration: none;
+    margin-top: 25px;
+    font-size: 1.15em;
+    text-shadow: #000 0.05em 0.05em 0.05em;
+
 }
 #todos {
     color: #000;
@@ -307,6 +318,50 @@ font-size: 1.1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+address {
+    padding: 35px 10px 50px 10px;
+    background: url(img/fundo8.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+address .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: auto;
+      
+}
+
+address .container topicos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+address .container topicos img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+address .container topico p {
+    font-weight: 600;
+    font-size: 1.1em;
+
+}
+.mapa{
+    display:none;
+}
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+#topo img{
+    width: 50px;
+    height: 50px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -385,9 +440,11 @@ font-size: 1.1em;
 
     main h1{
         font-size: 4em ;
+        text-shadow: #000 0.05em 0.05em 0.05em;
     }
     main h2{
-        font-size: 1.7em ;
+        font-size: 1.75em ;
+        text-shadow: #000 0.06em 0.06em 0.06em;
     }
 
     main .botao{
@@ -402,7 +459,8 @@ font-size: 1.1em;
     }
     #textoDestaque h2 {
         margin-bottom: 20px;
-        font-size: 2em ;
+        font-size: 2.2em ;
+        text-shadow: #000 0.06em 0.06em 0.06em;
     }
     
     #textoDestaque>p {
@@ -415,7 +473,8 @@ font-size: 1.1em;
     font-size: 1.4em ;  
     }
     #sobre h2 {
-        font-size: 2em;
+        font-size: 2.2em ;
+        text-shadow: #000 0.06em 0.06em 0.06em;
     }
     #sobre p {
         font-size: 1.5em;
@@ -433,9 +492,26 @@ font-size: 1.1em;
     #textofaixa p, a {
         font-size: 1.5em;
     }
+    #conteudo h2{
+        font-size: 2.1em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #conteudo a{
+        font-size: 1.66em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    .containercard h3{
+        font-size: 1.45em;
+        
+    }
+    .containercard p{
+        font-size: 1.22em;
+    }
     .card{
         margin: 0px 10px;
+        margin-top: 25px;
     }
+
     
 }  
 
@@ -452,7 +528,35 @@ font-size: 1.1em;
         font-size: 4em ;
     }
     main h2{
-        font-size: 1.7em ;
+        font-size: 1.75em ;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+        }
+    
+    #textoDestaque h2 {
+        font-size: 2.25em ;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #sobre h2{
+        font-size: 2.1em ;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #conteudo h2{
+        font-size: 2.1em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #conteudo a{
+        font-size: 1.66em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    .containercard h3{
+        font-size: 1.5em;
+    }
+    .containercard p{
+        font-size: 1.35em;
+    }
+    .card{
+        margin: 0px 10px;
+        margin-top: 25px;
     }
 }
 
@@ -557,6 +661,24 @@ font-size: 1.1em;
     }
     #conteudo .containercard{
         flex-direction: row;
+    }
+    #conteudo h2{
+        font-size: 2.1em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #conteudo a{
+        font-size: 1.3em;
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+    .containercard h3{
+        font-size: 1.45em;
+    }
+    .containercard p{
+        font-size: 1.08em;
+    }
+    .card{
+        margin: 0px 10px;
+        margin-top: 25px;
     }
     
 }
