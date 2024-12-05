@@ -124,7 +124,7 @@ nav ul li{
     text-align: right;
 }
 nav ul li a{
-    color:antiquewhite;
+    color:var(--branco);
     text-decoration: none;
 }
 
@@ -331,10 +331,16 @@ address {
 }
 address .container{
     flex-direction: column;
-    align-items: flex;
+}
+
+#sobremim p{
+    color: var(--branco);
+    margin-bottom: 15px;
+    font-size: 1.15em;
 }
 #contato{
     align-self: flex-start;
+    
 }
 #contato p{
     font-size: 1.1em;
@@ -343,9 +349,7 @@ address .container{
     width: 48px;
     height: 48px;
 }
-.mapa {
-    display: none;
-}
+
 #topo {
     position: fixed;
     right: 10px;
@@ -433,7 +437,7 @@ footer .container{
         width: 100%;
     }
      
-    /*footer*/
+    
 
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -537,8 +541,16 @@ footer .container{
         margin-top: 25px;
     }
     /*RODAPE*/
+    address h2{
+        font-size: 2.1em;
+        text-shadow: #000 0.06em 0.06em 0.06em;
+    }
+    #sobremim p{
+        font-size: 1.4em;
+    }
+    
     #contato p{
-        font-size: 1.15em;
+        font-size: 1.1em;
     }
     #contato img{
         width: 58px;
@@ -640,7 +652,7 @@ footer .container{
     /*main{
         height: 70vh;
     }*/
-   main h1{
+    main h1{
         font-size: 6em ;
     }
     main h2{
@@ -654,6 +666,9 @@ footer .container{
     #sobre .container{
         flex-direction: row;
         align-items: center;
+    }
+    #institucional{
+        margin-right: 50px;
     }
     #sobre h2 {
         margin-bottom: 20px;
@@ -678,6 +693,9 @@ footer .container{
         width: 250px;
         height: 250px ;
         display: block;
+    }
+    #textofaixa{
+        margin-left: 50px;
     }
 
     #textofaixa h2 {
@@ -715,10 +733,17 @@ footer .container{
         align-items: center;
         
     }
+    #sobremim{
+        margin-top: 10px;
+    }
+    #sobremim p{
+        align-items: center;
+        margin-left: 50px;
+    }
     #contato{
-        align-self: flex-end;
-        margin-right: 28vh;
-        margin-top: 5vh;
+        align-self: flex-start;
+        margin-left: 5vh;
+        margin-top: 0vh;
     }
     
     #contato p{
@@ -727,13 +752,6 @@ footer .container{
     #contato img{
         width: 45px;
         height: 45px;
-    }
-    
-    .mapa{
-        display: block;
-        align-self: flex-start;
-        margin-top: -30vh;
-        margin-left: 17vh;
     }
     footer{
         padding: 10px 0px;
