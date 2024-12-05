@@ -332,6 +332,10 @@ address {
 address .container{
     flex-direction: column;
 }
+address .container h3{
+    font-size: 1.5em;
+    text-shadow: #000 0.06em 0.06em 0.06em;
+}
 
 #sobremim p{
     color: var(--branco);
@@ -541,9 +545,10 @@ footer .container{
         margin-top: 25px;
     }
     /*RODAPE*/
-    address h2{
-        font-size: 2.1em;
+    address .container h3{
+        font-size: 1.7em;
         text-shadow: #000 0.06em 0.06em 0.06em;
+        align-self: center;
     }
     #sobremim p{
         font-size: 1.4em;
