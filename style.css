@@ -319,6 +319,7 @@ font-size: 1.1em;
     flex-wrap: wrap;
     justify-content: center;
 }
+/* RODAPE */
 address {
     padding: 35px 10px 50px 10px;
     background: url(img/fundo8.png);
@@ -328,31 +329,21 @@ address {
     color: #fff;
 }
 address .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: auto;
-      
+    flex-direction: column;
+    align-items: flex;
 }
-
-address .container topicos {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+#contato{
+    align-self: flex-start;
 }
-address .container topicos img {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-}
-
-address .container topico p {
-    font-weight: 600;
+#contato p{
     font-size: 1.1em;
-
 }
-.mapa{
-    display:none;
+#contato img{
+    width: 48px;
+    height: 48px;
+}
+.mapa {
+    display: none;
 }
 #topo {
     position: fixed;
@@ -409,7 +400,19 @@ address .container topico p {
     }
     #imagemfaixa img.QRCODE{
         display: none; 
-}
+    }
+    /* RODAPE */
+    address .container {
+        flex-direction: column;
+        align-items: flex-start; /* Centraliza os itens no meio */
+    }
+
+    address .container .topicos {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -511,6 +514,14 @@ address .container topico p {
         margin: 0px 10px;
         margin-top: 25px;
     }
+    /*RODAPE*/
+    #contato p{
+        font-size: 1.15em;
+    }
+    #contato img{
+        width: 58px;
+        height: 58px;
+    }
 
     
 }  
@@ -609,16 +620,7 @@ address .container topico p {
     main h2{
         font-size: 1.8em ;
     }
-    #imagemDestaque img.livro {
-        width: 260px;
-        height: 240px;
-        display: none;
-    }
-    #imagemDestaque img.QRCODE {
-        width: 260px;
-        height: 240px;
-        display: block;
-    }
+    
     #destaque {
         background-attachment: fixed;
     }
@@ -679,6 +681,33 @@ address .container topico p {
     .card{
         margin: 0px 10px;
         margin-top: 25px;
+    }
+    
+    /*rodape */
+    address .container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #contato{
+        align-self: flex-end;
+        margin-right: 28vh;
+        margin-top: 5vh;
+    }
+    
+    #contato p{
+        font-size: 1em;
+    }
+    #contato img{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .mapa{
+        display: block;
+        align-self: flex-start;
+        margin-top: -40vh;
+        margin-left: 17vh;
     }
     
 }
