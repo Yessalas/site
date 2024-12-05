@@ -735,7 +735,16 @@ footer .container{
         margin-top: -30vh;
         margin-left: 17vh;
     }
-    
+    footer{
+        padding: 10px 0px;
+    }
+    #autor p{
+        font-size: 1.2em;
+    }
+    #redesocial img{
+        width: 40px;
+        height: 40px;
+    }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
