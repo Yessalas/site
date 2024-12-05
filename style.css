@@ -332,7 +332,7 @@ address {
 address .container{
     flex-direction: column;
 }
-address .container h3{
+address .container h4{
     font-size: 1.5em;
     text-shadow: #000 0.06em 0.06em 0.06em;
 }
@@ -545,7 +545,7 @@ footer .container{
         margin-top: 25px;
     }
     /*RODAPE*/
-    address .container h3{
+    address .container h4{
         font-size: 1.7em;
         text-shadow: #000 0.06em 0.06em 0.06em;
         align-self: center;
