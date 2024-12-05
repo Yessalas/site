@@ -11,6 +11,7 @@
     --rosae:#ff8c9d;
     --rosinha:#f2bfbb;
     --amarelo:#f4f0e1;
+    --rosaescuro: #df9997;
 }
 /*CSS Reset (Compatibilizar em todos os navegadores) */
 *{
@@ -354,7 +355,27 @@ address .container{
     width: 50px;
     height: 50px;
 }
-
+/* footer */
+footer {
+    padding: 30px 0px;
+    background-color: var(--rosaescuro);
+    font-size: 0.875em;
+    color: #fff;
+    text-align: center;
+}
+footer .container{
+    flex-direction: column;
+}
+#autor p{
+    font-size: 1.4em;
+}
+#redesocial{
+    margin-top: 20px;
+}
+#redesocial img{
+    width: 48px;
+    height: 48px;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>*/
@@ -404,14 +425,15 @@ address .container{
     /* RODAPE */
     address .container {
         flex-direction: column;
-        align-items: flex-start; /* Centraliza os itens no meio */
+        align-items: flex-start; 
     }
 
     address .container .topicos {
         margin-bottom: 15px;
         width: 100%;
     }
-    
+     
+    /*footer*/
 
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -521,6 +543,10 @@ address .container{
     #contato img{
         width: 58px;
         height: 58px;
+    }
+    /*footer*/
+    #autor p{
+        font-size: 1.7em;
     }
 
     
