@@ -12,7 +12,7 @@ ano.innerHTML = anoAtual
 
 // fundo
 const main = document.querySelector('main')
-const backgrounds = ['url(img/background1.jpg)','url(img/background2.jpg)','url(img/background.jpg)']
+const backgrounds = ['url(img/bg.avif)','url(img/background1.jpg)','url(img/bg1.avif)']
 
 let indice = 0
 
@@ -26,4 +26,5 @@ main.style.backgroundImage = backgrounds[indice]
 main.style.transition = 'background-image 1s ease-in-out'
 }
 
-setInterval(slider, 3000)
+
+setInterval(slider, 2000)
