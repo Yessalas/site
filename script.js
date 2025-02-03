@@ -3,6 +3,13 @@
  * @author Yesenia Salas
  */
 
+// inserindo o ano na tag <spam>
+let ano = document.getElementById('copyrightYear')
+// a linha abaixo obtem o ano atual
+let anoAtual = new Date().getFullYear()
+// a linha abaixo atribui o ano a tag <spam>
+ano.innerHTML = anoAtual
+
 // fundo
 const main = document.querySelector('main')
 const backgrounds = ['url(img/background1.jpg)','url(img/background2.jpg)','url(img/background.jpg)']
@@ -20,12 +27,3 @@ main.style.transition = 'background-image 1s ease-in-out'
 }
 
 setInterval(slider, 3000)
-
-
-
-// inserindo o ano na tag <spam>
-let ano = document.getElementById('copyrightYear')
-// a linha abaixo obtem o ano atual
-let anoAtual = new Date().getFullYear()
-// a linha abaixo atribui o ano a tag <spam>
-ano.innerHTML = anoAtual
