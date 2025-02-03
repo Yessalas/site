@@ -12,7 +12,7 @@ ano.innerHTML = anoAtual
 
 // fundo
 const main = document.querySelector('main')
-const backgrounds = ['url(img/bg.avif)','url(img/background1.jpg)','url(img/bg1.avif)']
+const backgrounds = ['url(img/bg.png)','url(img/background1.jpg)','url(img/bg1.png)']
 
 let indice = 0
 
